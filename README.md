@@ -13,6 +13,23 @@ Oferecer uma ferramenta simples e acessível pelo celular para registrar e consu
 * Tela inicial com os compromissos do dia
 * Interface responsiva para dispositivos móveis e desktops
 
+## Escopo do MVP
+
+Primeira versão funcional da aplicação:
+
+- [ ] Cadastro e login de usuários
+- [ ] Cadastro, listagem, edição e exclusão de consultas
+- [ ] Cadastro, listagem, edição e exclusão de medicamentos
+- [ ] Cadastro, listagem, edição e exclusão de vacinas
+- [ ] Tela inicial com os compromissos do dia
+- [ ] Layout funcionando bem no celular
+
+### Fora do MVP (próximas versões)
+
+- Notificações e lembretes
+- Instalação como PWA e uso offline
+- Exportação do histórico em PDF
+
 ## Tecnologias utilizadas
 
 * Front-end: HTML5, CSS3 e JavaScript puro
