@@ -1,0 +1,129 @@
+:root {
+  --azul: #2f6fd0;
+  --azul-claro: #f4f4f5;
+  --verde: #1fa37f;
+  --verde-claro: #e6f7f1;
+  --roxo: #7b4fd6;
+  --roxo-claro: #f1ecfc;
+  --texto: #1b2a4a;
+  --texto-suave: #6b7a90;
+  --borda: #d9e1ec;
+  --fundo: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh; 
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+  background: #eef2f7;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--fundo);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Telas maiores (computador): vira a "moldura" de celular */
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+
+  .app {
+    width: 390px;
+    min-height: 0;
+    height: 800px;
+    border: 1px solid var(--borda);
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(27, 42, 74, 0.15);
+  }
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 28px 24px;
+  gap: 32px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.icone {
+  display: block;
+  color: var(--verde);
+  font-size: 64px;
+}
+
+.logo h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.logo h1 span {
+  color: var(--verde);
+}
+
+.logo p {
+  color: var(--texto-suave);
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.login input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  font: inherit;
+}
+
+.login button {
+  margin-top: 16px;
+  padding: 15px;
+  background: var(--azul);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cadastro {
+  text-align: center;
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+
+.cadastro a {
+  color: var(--azul);
+  text-decoration: none;
+}
